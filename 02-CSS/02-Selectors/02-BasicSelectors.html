@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #section_1, #section_2 {
+            background-color: lightcoral;
+        }
+        .child {
+            background-color: lightgoldenrodyellow;
+        }
+        #section_1 .child .grandChild {
+            background-color: darkgray;
+        }
+        #section_2.secondary {
+
+        }
+        div {
+            background-color: red !important;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Basic Selectors</h1>
+
+    <div id="section_1">
+        <h2>Inside Parent</h2>
+        <div class="child">
+            <h2>Inside Child</h2>
+            <div class="grandChild">
+                <h2>Inside GrandChild</h2>
+            </div>
+        </div>
+        <div class="child">
+                <h2>Inside Child</h2>
+                <div class="grandChild">
+                    <h2>Inside GrandChild</h2>
+                </div>
+            </div>
+    </div>
+    <hr>
+    <div id="section_2" class="secondary wrapper">
+            <h2>Inside Parent</h2>
+            <div class="child">
+                <h2>Inside Child</h2>
+                <div class="grandChild">
+                    <h2>Inside GrandChild</h2>
+                </div>
+            </div>
+            <div class="child">
+                    <h2>Inside Child</h2>
+                    <div class="grandChild">
+                        <h2>Inside GrandChild</h2>
+                    </div>
+                </div>
+        </div>
+    
+</body>
+</html>

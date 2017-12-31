@@ -1,0 +1,8 @@
+/* p - Selector
+{}- Expression
+font-size - Property
+20px - Value */
+p {
+    font-size: 20px;
+    color: red;
+}

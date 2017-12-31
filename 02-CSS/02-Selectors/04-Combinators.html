@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #parent > p {
+            font-size: 30px;
+            color: red;
+        }
+        #parent + h2 {
+            color: red;
+        }
+        #parent ~ h2 {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Combinators</h1>
+
+    <div id="parent">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis corrupti magni magnam saepe possimus non reiciendis quibusdam? Ipsa, voluptas. Neque maxime commodi illum! Dolorum sapiente neque labore ratione quidem nam.
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates doloribus minima error dicta, suscipit numquam magnam aspernatur sequi maxime expedita non, cupiditate nemo aliquid ratione modi? Sint fugit perspiciatis rem!
+        </p>
+        <div class="div_1">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum fuga ratione autem mollitia atque aliquam officiis fugiat, libero aliquid non? Nihil quam necessitatibus earum velit nemo. Quas nobis placeat quidem.
+            </p>
+            <div class="div_2">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi eveniet eos tempora aliquam repellat maiores alias nisi voluptatum vel! Cupiditate deserunt quos neque aperiam nostrum eveniet aliquid. Assumenda, vitae adipisci.
+                </p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <h2>This heading is outside Div</h2>
+    <h2>This heading is outside Div</h2>
+    <h2>This heading is outside Div</h2>
+    
+</body>
+</html>
