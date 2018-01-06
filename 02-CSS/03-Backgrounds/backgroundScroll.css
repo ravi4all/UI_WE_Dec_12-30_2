@@ -1,0 +1,36 @@
+body {
+    background-image: url("https://www.cricket.com.au/-/media/News/2017/11/28Kohli.ashx");
+    /* background-size: contain; */
+    /* background-size: cover; */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 0px;
+    background-attachment: fixed;
+}
+
+div {
+    height: 600px;
+    background-size: 100% 100%;
+    margin-bottom: 400px;
+    background-attachment: fixed;
+}
+
+#div_1 {
+    background-image: url("../../images/WebImages/awesome-wallpapers-6482-6759-hd-wallpapers.jpg");
+}
+
+#div_2 {
+    background-image: url("https://d1u4oo4rb13yy8.cloudfront.net/linwdoryvb-1497428347.jpg");
+}
+
+#div_3 {
+    background-image: url("../../images/WebImages/chris-hemsworth-thor-2.jpg");
+}
+
+#div_4 {
+    background-image: url("../../images/WebImages/Terminator002.jpg");
+}
+
+#div_5 {
+    background-image: url("https://static.toiimg.com/photo/msid-60880350/60880350.jpg?83560");
+}
