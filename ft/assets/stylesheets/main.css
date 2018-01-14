@@ -1,0 +1,66 @@
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin-top: 0px;
+}
+
+#topbar {
+    background-color: #252525;
+    padding: 10px 0px;
+}
+#topbar ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+#topbar ul li {
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0px 20px;
+}
+#topbar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+#topbar ul li a .green {
+    border: 1px solid #9cd321;
+    padding: 2px;
+    color: #9cd321;
+}
+
+#topbar .visitMarket a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.container {
+    width: 1150px;
+    margin: 0 auto;
+}
+
+#header {
+
+}
+
+#footer {
+
+}
