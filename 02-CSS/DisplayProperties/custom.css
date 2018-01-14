@@ -1,0 +1,42 @@
+#banner {
+    max-height: 500px;
+    /* min-height: 300px; */
+    position: relative;
+}
+#banner img {
+    width: 100%;
+    max-height: inherit;
+}
+#banner .description {
+    /* position: absolute;
+    top: 0%;
+    left: 0%;
+    color: #fff; */
+    /* margin-left: -150px;
+    margin-top: -30px; */
+    /* width: 100%; */
+    /* text-align: center; */
+    /* margin: 0 auto; */
+}
+
+#banner .wrapper {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    top: 0px;
+}
+#banner .inner-wrapper {
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+#banner .description {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#banner h2 {
+    color: #fff;
+    font-size: 40px;
+}
