@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            height: 300px;
+            /* background-color: red; */
+            /* background-color: yellow; */
+            /* Gradient - Linear and Radial */
+            /* background: linear-gradient(90deg, red, yellow,green,blue); */
+            /* background: linear-gradient(orange,rgba(255,255,255,0.5),green); */
+            background: -moz-linear-gradient(261deg, rgba(127,68,128,1) 0%, rgba(127,68,128,1) 24%, rgba(255,203,31,1) 55%, rgba(0,128,128,1) 79%, rgba(0,128,128,1) 100%); /* ff3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(127,68,128,1)), color-stop(24%, rgba(127,68,128,1)), color-stop(55%, rgba(255,203,31,1)), color-stop(79%, rgba(0,128,128,1)), color-stop(100%, rgba(0,128,128,1))); /* safari4+,chrome */
+background: -webkit-linear-gradient(261deg, rgba(127,68,128,1) 0%, rgba(127,68,128,1) 24%, rgba(255,203,31,1) 55%, rgba(0,128,128,1) 79%, rgba(0,128,128,1) 100%); /* safari5.1+,chrome10+ */
+background: -o-linear-gradient(261deg, rgba(127,68,128,1) 0%, rgba(127,68,128,1) 24%, rgba(255,203,31,1) 55%, rgba(0,128,128,1) 79%, rgba(0,128,128,1) 100%); /* opera 11.10+ */
+background: -ms-linear-gradient(261deg, rgba(127,68,128,1) 0%, rgba(127,68,128,1) 24%, rgba(255,203,31,1) 55%, rgba(0,128,128,1) 79%, rgba(0,128,128,1) 100%); /* ie10+ */
+background: linear-gradient(189deg, rgba(127,68,128,1) 0%, rgba(127,68,128,1) 24%, rgba(255,203,31,1) 55%, rgba(0,128,128,1) 79%, rgba(0,128,128,1) 100%); /* w3c */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7F4480', endColorstr='#008080',GradientType=0 ); /* ie6-9 */
+        }
+        img {
+            position: absolute;
+            top: 20%;
+            left: 40%;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Gradient Color</h1>
+
+    <div></div>
+
+    <img src="../../images/00-22.gif" alt="">
+    
+</body>
+</html>
