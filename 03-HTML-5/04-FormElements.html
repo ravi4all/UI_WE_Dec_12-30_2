@@ -33,6 +33,76 @@
                 </td>
             </tr>
             <tr>
+                <td>Enter DOB</td>
+                <td>
+                    <input type="date">
+                </td>
+                <td>
+                    <input type="time">
+                </td>
+                <td>
+                    <input type="datetime-local">
+                </td>
+                <td>
+                    <input type="month">
+                </td>
+                <td>
+                    <input type="week">
+                </td>
+            </tr>
+            <tr>
+                <td>Choose Color</td>
+                <td>
+                    <input type="color">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter URL</td>
+                <td>
+                    <input type="url" placeholder="Enter URL">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Age</td>
+                <td>
+                    <input type="number" min="18" max="30">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter PIN</td>
+                <td>
+                    <input type="text" placeholder="Enter PIN" maxlength="4">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Card Number</td>
+                <td>
+                    <input type="text" placeholder="Enter Card No" pattern="[0-9]{4}|[a-z]{4}" title="It should be 4 digit number">
+                </td>
+            </tr>
+            <tr>
+                <td>Select Range</td>
+                <td>
+                    <!-- <input type="range" value="1000" onchange="output.value = value" min="1000" max="5000" step="100"> -->
+                    <input type="range" value="10" onchange="progress.value = value" min="0" max="100">
+                </td>
+                <td>
+                    <output id="output">1000</output>
+                </td>
+            </tr>
+            <tr>
+                <td>Your Progress</td>
+                <td>
+                    <progress id="progress" value="50" max="100"></progress>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter message</td>
+                <td>
+                    <textarea placeholder="Enter message" cols="30" rows="10" style="resize:none;"></textarea>
+                </td>
+            </tr>
+            <tr>
                 <td>
                     <input type="reset">
                 </td>
