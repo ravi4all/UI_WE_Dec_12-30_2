@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            border: 2px solid red;
+        }
+        img {
+            transition-duration: 5s;
+        }
+        div:hover img {
+            /* transform: translateX(900px); */
+            transform: translate(900px, -300px);
+        }
+        .div_1 {
+            height: 300px;
+            width: 400px;
+            background-color: red;
+            /* position: absolute; */
+        }
+        .div_1:hover {
+            transform: translateY(100px);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Transform : Translate</h1>
+    <div class="div_1"></div>
+    <div>
+        <img src="../../images/hulk5-18463.gif" alt="">
+    </div>
+    
+</body>
+</html>
