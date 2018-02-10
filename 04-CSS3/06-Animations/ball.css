@@ -1,0 +1,71 @@
+div {
+    height: 100px;
+    width: 100px;
+    background-image: url("../../images/Football.png");
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: 10px;
+    animation: ball_anim 2s infinite;
+}
+#div_1 {
+    left: 0%;
+    animation-timing-function: ease-in;
+}
+#div_2 {
+    left: 20%;
+    animation-timing-function: ease-in-out;
+}
+#div_3 {
+    left: 40%;
+    animation: ball_2 5s infinite;
+    animation-timing-function: linear;
+}
+
+
+@keyframes ball_2 {
+    0% {
+        left: 40%;
+        bottom: 10px;
+        transform: rotate(0deg);
+    }
+    25% {
+        left: 0%;
+        bottom: 225px;
+        transform: rotate(360deg);
+    }
+    50% {
+        left: 40%;
+        bottom: 500px;
+        /* transform: rotate(0deg); */
+    }
+    75% {
+        left: 86%;
+        bottom: 225px; 
+    }
+    100% {
+        left: 40%;
+        bottom: 10px;
+    }
+}
+
+
+#div_4 {
+    left: 60%;
+    animation-timing-function: ease-out;
+}
+#div_5 {
+    left: 80%;
+    animation-timing-function: ease;
+}
+
+@keyframes ball_anim {
+    0% {
+        bottom: 10px;
+    }
+    50% {
+         bottom: 500px;
+    }
+    100% {
+        bottom: 10px;
+    }
+}

@@ -1,0 +1,40 @@
+body {
+    margin: 0px;
+    overflow: hidden;
+}
+#slider {
+    width: 500%;
+    position: absolute;
+    /* animation: carousel 10s infinite linear; */
+}
+#slider.animate {
+    animation: carousel 10s infinite linear;
+}
+#slider div {
+    float: left;
+    width: 20%;
+}
+img {
+    width: 100%;
+    max-height: 600px;
+}
+
+@keyframes carousel{
+    0%,15% {
+        left: 0%;
+    }
+    20%,35% {
+        left: -100%;
+    }
+    40%,55% {
+        left: -200%;
+    }
+    60%,75% {
+        left: -300%;
+    }
+    80%,100% {
+        left: -400%;
+    }
+    /* last image and first image should be same because after 500% it will show white space..and also the change of image will not affect the animation...it will remain unnoticed... */
+    /* If we will go for left -500% then it will again show white space */
+}
