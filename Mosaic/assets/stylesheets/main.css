@@ -28,7 +28,7 @@
 * Body settings, change it as required
 */
 
-body { margin: 0px; font-family: Arial, Helvetica, sans-serif; font-size: 1em; line-height: 1.4; }
+body { overflow: hidden; margin: 0px; font-family: Arial, Helvetica, sans-serif; font-size: 1em; line-height: 1.4; }
 
 
 /*
@@ -249,7 +249,8 @@ img.aligncenter { display:block; margin-left:auto; margin-right:auto; margin-bot
     width: 100%;
     background-color: #45B39D;
     top: 0px;
- }
+    z-index: 100;
+}
 
  #header .row {
      justify-content: space-around;
@@ -310,13 +311,40 @@ img.aligncenter { display:block; margin-left:auto; margin-right:auto; margin-bot
 /* Banner ---------------------- */
 #banner{ }
 
+.logo {
+    margin-bottom: 20px;
+}
+.logo a {
+    color: #9E9E9E;
+    font-size: 30px;
+    display: block;
+    padding: 10px 10px;
+}
+.logo a:hover {
+    color: #fff;
+}
+
 /* Main Navigation ---------------------- */
 #main-navigation{
     position: fixed;
     width: 4%;
     top: 0px;
     height: 100%;
+    z-index: 100;
     background-color: #000;
+ }
+ #main-navigation ul {
+     margin: 0px;
+     padding: 0px;
+     list-style: none;
+ }
+ #main-navigation ul li a {
+     display: block;
+     padding: 10px 15px;
+     color: #C8C8C8;
+ }
+ #main-navigation ul li a:hover {
+     color: #EA57A3;
  }
 
 /* Content ---------------------- */
@@ -332,6 +360,9 @@ img.aligncenter { display:block; margin-left:auto; margin-right:auto; margin-bot
     width: 68%;
  }
 
+ #trending {
+     height: 500px;
+ }
 #trending .slideshow {
      position: relative;
  }
@@ -388,9 +419,47 @@ img.aligncenter { display:block; margin-left:auto; margin-right:auto; margin-bot
     }
 }
 
+#featured {
+    overflow: hidden;
+}
+#slider {
+    width: 700%;
+    position: absolute;
+    left: 0%;
+    animation: carousel_1 10s infinite linear;
+}
+#slider .slide {
+    display: inline-block;
+    width: 3.2%;
+    margin: 0px 10px;
+}
+
+@keyframes carousel_1 {
+    0%,15% {
+        left: 0%;
+    }
+    20%,35% {
+        left: -20%;
+    }
+    40%,55% {
+        left: -40%;
+    }
+    60%,75% {
+        left: -60%;
+    }
+    100% {
+        left: -80%;
+    }
+}
+
+
 /* Sidebar ---------------------- */
 #sidebar {
     width: 30%;
+ }
+ #sidebar video {
+     width: 400px;
+     height: 270px;
  }
 
 /* Footer ---------------------- */
