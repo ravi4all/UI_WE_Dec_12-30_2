@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <style>
+        .red, .green {
+            height: 200px;
+            margin-bottom: 20px;
+        }
+        .red {
+            background-color: red;
+        }
+        .green {
+            background-color: green;
+        }
+        .yellow, .blue {
+            height: 100px;
+        }
+        .yellow {
+            background-color: yellow;
+        }
+        .blue {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Grid System</h1>
+
+    <!-- Conatiner
+        - Row
+            - Col-1
+                // Content
+            - Col-2
+                - Row
+                    - Col-1
+                        // Content
+                    - Col-2
+                        // Content
+        
+        -Row
+            - Col-1
+            - Col-2 -->
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-2 col-lg-4 col-md-6">
+                <div class="red"></div>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-6">
+                <div class="green"></div>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-6">
+                <div class="red"></div>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-6">
+                <div class="green"></div>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-6">
+                <div class="red"></div>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-6">
+                <div class="green"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8">
+                <div class="red">
+                    <div class="row justify-content-around">
+                        <div class="col-4">
+                            <div class="blue"></div>
+                        </div>
+                        <div class="col-4">
+                            <div class="yellow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="green"></div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
