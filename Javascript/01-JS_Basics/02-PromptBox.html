@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Prompt Box</h1>
+    <button onclick="show()">Click Here</button>
+    
+    <script>
+        function show(){
+            var a = parseInt(prompt("Enter first number",0));
+            var b = parseInt(prompt("Enter second number",0));
+            var c = a + b;
+            // Truthy and Falsy
+            if(!c){
+                alert("Invalid Input...");
+                show();
+            }   
+            else{
+                alert("Result is "+c);
+            }
+            
+        }
+    </script>
+</body>
+</html>
