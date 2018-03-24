@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+body{
+	font-size: 1.5em;
+	padding: 0px 50px;
+}
+#button{
+	color: CornFlowerBlue;
+	margin: 10px;
+	padding: 10px;
+	font-size: 1.5em;
+}
+</style>
+
+</head>
+
+<body>
+<h1 align="center">Show errors in JavaScript</h1>
+<hr/>
+	
+		The <b><i>onerror</i></b> event handler provides three pieces of
+		information to identify the exact nature of the error:
+	<ul>
+		<li><b><i>Error message:</i></b> The same message that the
+			browser would display for the given error</li>
+		<li><b><i>URL:</i></b> The file in which the error occurred</li>
+		<li><b><i>Line number:</i></b> The line number in the given URL
+			that caused the error</li>
+	</ul>
+	<br/>
+	<p>I am calling a function which is not defined here, it will raise an exception</p>
+		<form align="center">
+			<input type="button" id="button" value="See Error/Exception" onclick="myFunc();" />
+		</form>
+<script type="text/javascript">
+	window.onerror = function(msg, url, line) {
+		alert("Message : " + msg);
+		alert("url : " + url);
+		alert("Line number : " + line);
+	}
+
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,105 @@
+var x = "hello";
+undefined
+typeof(x)
+"string"
+var a = 12
+undefined
+typeof(a)
+"number"
+x instanceof String
+false
+arr = [2,4,6,8,9,5,6]
+(7) [2, 4, 6, 8, 9, 5, 6]
+typeof(arr)
+"object"
+arr instanceof Array
+true
+str_1 = new String('Hello')
+String {"Hello"}
+typeof(str_1)
+"object"
+str_2 = "Hello"
+"Hello"
+str_1 == str_2
+true
+str_1 === str_2
+false
+str_1 instanceof Object
+true
+typeof(Object)
+"function"
+var obj = {
+	"id" : 101,
+	"name" : "Ram",
+	"age" : 21
+}
+undefined
+obj.name
+"Ram"
+obj.college
+undefined
+obj.college = "IP"
+"IP"
+obj
+{id: 101, name: "Ram", age: 21, college: "IP"}age: 21college: "IP"id: 101name: "Ram"__proto__: Objectconstructor: ƒ Object()hasOwnProperty: ƒ hasOwnProperty()isPrototypeOf: ƒ isPrototypeOf()propertyIsEnumerable: ƒ propertyIsEnumerable()toLocaleString: ƒ toLocaleString()toString: ƒ toString()valueOf: ƒ valueOf()__defineGetter__: ƒ __defineGetter__()__defineSetter__: ƒ __defineSetter__()__lookupGetter__: ƒ __lookupGetter__()__lookupSetter__: ƒ __lookupSetter__()get __proto__: ƒ __proto__()set __proto__: ƒ __proto__()
+var obj = {
+	"id" : 101,
+	"name" : "Ram",
+	"age" : 21,
+	"bio" : function(){
+		console.log("Details are"+id,name,age);
+	}
+}
+undefined
+obj.bio()
+VM231:6 Uncaught ReferenceError: id is not defined
+    at Object.bio (<anonymous>:6:29)
+    at <anonymous>:1:5
+bio @ VM231:6
+(anonymous) @ VM237:1
+var obj = {
+	"id" : 101,
+	"name" : "Ram",
+	"age" : 21,
+	"bio" : function(){
+		console.log("Details are"+this.id,this.name,this.age);
+	}
+}
+undefined
+obj.bio()
+VM244:6 Details are101 Ram 21
+undefined
+function Person(){
+	
+}
+undefined
+var obj_1 = new Person();
+undefined
+obj_1
+Person {}
+obj_1.id = 101
+101
+obj_1.name = 'Shyam'
+"Shyam"
+obj_1
+Person {id: 101, name: "Shyam"}
+obj instanceof Person
+false
+obj_1 instanceof Person
+true
+Person instanceof Object
+true
+function Person(id,name,age){
+	this.id = id;
+	this.name = name;
+	this.age = age;
+}
+undefined
+var obj_2 = new Person(102,'Ajay',22);
+undefined
+obj_2
+Person {id: 102, name: "Ajay", age: 22}
+obj_2.college = 'IP'
+"IP"
+obj_2
+Person {id: 102, name: "Ajay", age: 22, college: "IP"}
