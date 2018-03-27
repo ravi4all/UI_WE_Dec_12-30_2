@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+
+    <script src="../model/Product.js"></script>
+    <script src="../model/obj.js"></script>
+    <script src="../controller/controller.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Product CRUD</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form">
+                    <input type="text" class="form-control" placeholder="Enter Product Name" id="box_1">
+                    <br>
+                    <input type="number" class="form-control" placeholder="Enter Product Price" id="box_2">
+                    <br>
+                    <textarea id="box_3" class="form-control" placeholder="Enter Product Description" cols="30" rows="10"></textarea>
+                    <br>
+                </div>
+                <div class="buttons">
+                    <button id="add" class="btn">Add</button>
+                    <button id="delete" class="btn">Delete</button>
+                    <button id="update" class="btn">Update</button>
+                    <button id="save" class="btn">Save</button>
+                    <button id="load" class="btn">Load</button>
+                    <button id="sort" class="btn">Sort</button>
+                </div>
+            </div>
+            <div class="col-md-6 products">
+                <ul id="itemList">
+                    <!-- <li id="itemList"></li>  -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
