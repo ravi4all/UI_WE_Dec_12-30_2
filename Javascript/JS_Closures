@@ -1,0 +1,82 @@
+function outer(){
+	console.log("This is outer function...")
+	function inner(){
+		console.log("This is inner function...");
+	}
+}
+undefined
+outer()
+VM88:2 This is outer function...
+undefined
+function outer(){
+	console.log("This is outer function...")
+	function inner(){
+		console.log("This is inner function...");
+	}
+	inner();
+}
+undefined
+outer()
+VM103:2 This is outer function...
+VM103:4 This is inner function...
+undefined
+function outer(){
+	var x = 10;
+	console.log("This is outer function...")
+	function inner(){
+		console.log("This is inner function...");
+		return x += 1;
+	}
+	inner();
+}
+undefined
+outer()
+VM113:3 This is outer function...
+VM113:5 This is inner function...
+undefined
+function outer(){
+	var x = 10;
+	console.log("This is outer function...")
+	function inner(){
+		console.log("This is inner function...");
+		return x += 1;
+	}
+	console.log(inner());
+}
+undefined
+outer()
+VM123:3 This is outer function...
+VM123:5 This is inner function...
+VM123:8 11
+undefined
+function outer(){
+	var x = 10;
+	console.log("This is outer function...")
+	function inner(){
+		console.log("This is inner function...");
+		return x += 1;
+	}
+	return inner;
+}
+undefined
+outer()
+VM135:3 This is outer function...
+ƒ inner(){
+		console.log("This is inner function...");
+		return x += 1;
+	}
+outer()()
+VM135:3 This is outer function...
+VM135:5 This is inner function...
+11
+var y = outer();
+VM135:3 This is outer function...
+undefined
+typeof(y)
+"function"
+y()
+VM135:5 This is inner function...
+11
+y()
+VM135:5 This is inner function...
+12

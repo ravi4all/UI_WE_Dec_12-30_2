@@ -11,6 +11,29 @@ function init(){
 
     document.getElementById("add").addEventListener("click", addItem);
     document.getElementById("delete").addEventListener("click", deleteProduct);
+    document.getElementById("save").addEventListener("click",saveData);
+    document.getElementById("load").addEventListener("click", loadData);
+}
+
+function saveData(){
+    if(window.localStorage){
+        var json = JSON.stringify(obj.itemList);
+        // console.log(json);
+        localStorage.setItem('productData', json);
+        alert("Data saved...");
+    }
+    else{
+        alert("Localstorage not supported...")
+    }
+}
+
+function loadData(){
+    if(window.localStorage){
+        // localStorage.productData;
+        var json = localStorage.getItem('productData');
+        obj.itemList = JSON.parse(json);
+        printProduct();
+    }
 }
 
 function addItem(){
