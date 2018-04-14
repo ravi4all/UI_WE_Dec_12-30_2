@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Slide Effect</h1>
+
+    <button id="btn_1">SlideUp</button>
+    <button id="btn_2">SlideDown</button>
+    <button id="btn_3">Slide Toggle</button>
+    <br><br>
+    <img src="../../images/images/l34882-ironman-rigged-original-model--98611.jpg" alt="">
+    
+    <script src="../jquery-3.3.1.min.js"></script>
+    <script>
+        $("#btn_1").click(function(){
+            $("img").slideUp(1000);
+        });
+        $("#btn_2").click(function(){
+            $("img").slideDown(1000);
+        });
+        $("#btn_3").click(function(){
+            $("img").slideToggle(1000);
+        })
+    </script>
+    
+</body>
+</html>
