@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>AJAX Example</h1>
+
+    <button onclick="caller()">Click Here</button>
+
+    <script>
+        function one(){
+            console.log("Function one executed");
+        }
+        function two(){
+            console.log("Function two executed");
+        }
+        function three(){
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function(){
+                console.log("Ready state",this.readyState);
+                console.log("Status",this.status);
+                if(this.readyState == 4 && this.status == 200){
+                    console.log("AJAX Loaded...");
+                    console.log("Data",this.responseText);
+                }
+            }
+            xhttp.open('get', 'data.json');
+            xhttp.send();
+
+            // for (var i = 0; i<100000; i++){
+            //     for(var j = 0; j<10000; j++){
+            //         x = i * j;
+            //     }
+            // }
+            // console.log("Loop Completed");
+            console.log("Function three executed");
+        }
+        function four(){
+            console.log("Function four executed");
+        }
+        function five(){
+            console.log("Function five executed");
+        }
+        function six(){
+            console.log("Function six executed");
+        }
+
+        function caller(){
+            one();
+            two();
+            three();
+            four();
+            five();
+            six();
+        }
+
+/*
+ readyState	Holds the status of the XMLHttpRequest.
+ 0: request not initialized
+ 1: server connection established
+ 2: request received
+ 3: processing request
+ 4: request finished and response is ready
+
+ status	Returns the status-number of a request
+ 200: "OK"
+ 403: "Forbidden"
+ 404: "Not Found"*/
+
+    </script>
+    
+</body>
+</html>
