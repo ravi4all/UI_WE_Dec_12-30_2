@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>AJAX with Jquery</h1>
+    <button>Load Data</button>
+    <div id="content">
+        <h3>Total Songs : <span id="num"></span></h3>
+        <h4>Song Name : <span id="songName"></span></h4>
+        <h4>Album Name : <span id="album"></span></h4>
+        <h4>Artist : <span id="artist"></span></h4>
+    </div>
+    
+    <script src="../jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $.get("1.json", function(data){
+                    // console.log(data);
+                    var json = data;
+                    $("#num").html(json.resultCount);
+                    var songs = json.results;
+                    var albumName = songs[0].collectionName;
+                    var songName = songs[0].trackName;
+                    var artist = songs[0].artistName;
+                    $("#songName").html(songName);
+                    $("#album").html(albumName);
+                    $("#artist").html(artist);
+                })
+            })
+        })
+    </script>
+</body>
+</html>

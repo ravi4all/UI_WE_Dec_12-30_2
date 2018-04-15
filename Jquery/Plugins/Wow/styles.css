@@ -1,0 +1,14 @@
+body {
+    margin: 0px;
+}
+#header {
+    background-color: lightblue;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+}
+
+#banner img {
+    width: 100%;
+}
